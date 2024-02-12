@@ -21,14 +21,19 @@ const Card = ({ item, setCartValue }) => {
     <div>
       <>
         <div>
-          <h1>{item.name}</h1>
-          <h3>Rs.{item.price}</h3>
-          <h3>Rs.{discountedprice}</h3>
-          {status ? (
-            <button onClick={AddCart}>Add to Cart</button>
-          ) : (
-            <button onClick={RemoveCart}>Remove from Cart</button>
-          )}
+          <div class="card" style="width: 18rem;">
+            {/* <img src="..." class="card-img-top" alt="..."> */}
+            <div class="card-body">
+              <h1>{item.name}</h1>
+              <h3>Rs.{item.price}</h3>
+              <h3>Rs.{discountedprice}</h3>
+              {status ? (
+                <button onClick={AddCart}>Add to Cart</button>
+              ) : (
+                <button onClick={RemoveCart}>Remove from Cart</button>
+              )}
+            </div>
+          </div>
         </div>
       </>
     </div>

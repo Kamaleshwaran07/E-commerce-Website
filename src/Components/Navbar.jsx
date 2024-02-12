@@ -28,21 +28,21 @@ const Navbar = ({ cartValue, setCartValue }) => {
               </li>
               <li class="nav-item">
                 <a class="nav-link" href="#">
-                  Features
+                  About
                 </a>
               </li>
               <li class="nav-item">
                 <a class="nav-link" href="#">
-                  Pricing
+                  Shop
                 </a>
               </li>
             </ul>
           </div>
-          <span class="justify-content-end">
-            Cart
-            <i class="fa-solid fa-cart-shopping"></i>
-            <sup>{cartValue}</sup>
-          </span>
+          <pre>
+            <span class="justify-content-end me-2">
+              <i class="fa-solid fa-cart-shopping"></i> Cart <span>{cartValue}</span>
+            </span>
+          </pre>
         </div>
       </nav>
     </div>
