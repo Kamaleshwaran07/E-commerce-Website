@@ -7,5 +7,6 @@
   padding: 4em;
   height: 18em;
 }
-h1 {
+#displayDiscount{
+    display: none;
 }

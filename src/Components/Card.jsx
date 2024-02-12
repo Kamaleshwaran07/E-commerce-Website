@@ -13,20 +13,30 @@ const Card = ({ item, setCartValue }) => {
   let price = Number(item.price);
   let discount = Number(item.discount) / 100;
   let discountedprice = price - price * discount;
-  console.log(price);
-  console.log(discount);
-  console.log(discountedprice);
+  let discountvalue = item.discountValue;
 
   return (
     <div>
       <>
         <div>
-          <div class="card" style="width: 18rem;">
+          <div class="card">
             {/* <img src="..." class="card-img-top" alt="..."> */}
             <div class="card-body">
-              <h1>{item.name}</h1>
-              <h3>Rs.{item.price}</h3>
-              <h3>Rs.{discountedprice}</h3>
+              <ul class="fa-ul">
+                <li>
+                  <h1>{item.name}</h1>
+                </li>
+                <li>
+                  <span class={item.discountClass}>
+                    <h3>Rs.{item.price}</h3>
+                  </span>
+                  {discountvalue == "true" && (
+                    <span >
+                      <h3>Rs.{discountedprice}</h3>
+                    </span>
+                  )}
+                </li>
+              </ul>
               {status ? (
                 <button onClick={AddCart}>Add to Cart</button>
               ) : (
