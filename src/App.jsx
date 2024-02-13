@@ -7,7 +7,7 @@ import { useState } from "react";
 import Footer from "./Components/Footer";
 
 function App() {
-  const [cartValue, setCartValue] = useState(0);
+  const [cartValue, setCartValue] = useState(0); //Initial Cart Value zero
 
   let data = [
     {
@@ -89,7 +89,7 @@ function App() {
     },
   ];
 
-  const [product, setProducts] = useState(data);
+  const [product, setProducts] = useState(data); //Passing the data to the useState and it has given as props to Conditional Rendering component
   const [status, setStatus] = useState(true);
   return (
     <div>

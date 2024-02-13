@@ -57,7 +57,7 @@
   font-size: 1.2em;
 }
 .fa-ul {
-  margin-left: 0;
+  margin-left: 0 !important;
 }
 #footer {
   background-color: #212529;
