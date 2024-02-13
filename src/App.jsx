@@ -12,7 +12,7 @@ function App() {
     {
       name: "Shirt",
       price: "899",
-      image: "./src/assets/shirts.jpg",
+      image: "./src/assets/shirts 1.png",
       discount: "30",
       discountClass: "text-muted text-decoration-line-through",
       discountValue: "true",
@@ -22,7 +22,7 @@ function App() {
     {
       name: "Jeans",
       price: "1299",
-      image: "./src/assets/jeans.jpg",
+      image: "./src/assets/jeans 1.png",
       discount: "15",
       discountClass: "text-muted text-decoration-line-through",
       discountValue: "true",
@@ -32,7 +32,7 @@ function App() {
     {
       name: "T-shirt",
       price: "599",
-      image: "./src/assets/t-shirt.jpg",
+      image: "./src/assets/t-shirt 1.png",
       discount: "",
       discountClass: "",
       discountValue: "false",
@@ -41,7 +41,7 @@ function App() {
     {
       name: "Trousers",
       price: "499",
-      image: "./src/assets/shorts.jpg",
+      image: "./src/assets/shorts 1.png",
       discount: "",
       discountClass: "",
       discountValue: "false",
@@ -51,7 +51,7 @@ function App() {
     {
       name: "Shoes",
       price: "799",
-      image: "./src/assets/shoes.jpg",
+      image: "./src/assets/shoes 1.png",
       discount: "50",
       discountClass: "text-muted text-decoration-line-through",
       discountValue: "true",
@@ -61,16 +61,16 @@ function App() {
     {
       name: "Saree",
       price: "599",
-      image: "./src/assets/saree.jpg",
+      image: "./src/assets/saree 1.png",
       discount: "10",
       discountClass: "text-muted text-decoration-line-through",
       discountValue: "true",
       rating: "",
     },
     {
-      name: "Churidhar",
+      name: "Chudidhar",
       price: "999",
-      image: "./src/assets/chudidhar.jpg",
+      image: "./src/assets/chudidhar 1.jpg",
       discount: "",
       discountClass: "",
       discountValue: "",
@@ -79,7 +79,7 @@ function App() {
     {
       name: "Tops",
       price: "499",
-      image: "./src/assets/tops.jpg",
+      image: "./src/assets/tops.png",
       discount: "",
       discountClass: "",
       discountValue: "",
