@@ -1,5 +1,8 @@
-#header {
+.header {
   background-color: #212529;
+}
+
+#header {
   color: white;
   text-align: center;
   justify-content: center;
@@ -10,6 +13,7 @@
 #displayDiscount {
   display: none;
 }
+
 #image {
   position: relative;
 }
@@ -31,21 +35,42 @@
 .container {
   margin-left: 5em;
 }
+@media screen and (max-width: 1025px) {
+  .container {
+    margin-left: 2em;
+  }
+}
+@media screen and (max-width: 426px) {
+  .container {
+    margin-left: 2em;
+  }
+}
+@media screen and (max-width: 376px) {
+  .container {
+    margin-left: 1em;
+  }
+  .card {
+    width: 15em;
+  }
+}
 #button {
   font-size: 1.2em;
 }
 .fa-ul {
   margin-left: 0;
 }
-.footer {
-  display: flex;
-  align-items: center;
-  justify-content: center;
+#footer {
+  background-color: #212529;
   height: 15em;
   color: white;
-  background-color: #212529;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
-
+#footerContent {
+  display: flex;
+  align-items: center;
+}
 body {
   --sb-track-color: #d8d8d8;
   --sb-thumb-color: #212529;
@@ -53,7 +78,7 @@ body {
 }
 
 body::-webkit-scrollbar {
-  width: var(--sb-size)
+  width: var(--sb-size);
 }
 
 body::-webkit-scrollbar-track {
@@ -64,12 +89,10 @@ body::-webkit-scrollbar-track {
 body::-webkit-scrollbar-thumb {
   background: var(--sb-thumb-color);
   border-radius: 10px;
- 
 }
 
 @supports not selector(::-webkit-scrollbar) {
   body {
-    scrollbar-color: var(--sb-thumb-color)
-                     var(--sb-track-color);
+    scrollbar-color: var(--sb-thumb-color) var(--sb-track-color);
   }
 }

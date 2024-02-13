@@ -6,7 +6,7 @@ const ConditionalRendering = ({ product, cartValue, setCartValue }) => {
       {product.map((item) => {
         return (
           <>
-            <div className="col-3">
+            <div className="col-xxl-3 col-lg-4 col-md-6">
               <Card
                 item={item}
                 cartValue={cartValue}
