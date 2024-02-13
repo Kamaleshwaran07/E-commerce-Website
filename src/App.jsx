@@ -4,6 +4,7 @@ import Header from "./Components/Header";
 // import Card from './Components/Card'
 import ConditionalRendering from "./Components/ConditionalRendering";
 import { useState } from "react";
+import Footer from "./Components/Footer";
 
 function App() {
   const [cartValue, setCartValue] = useState(0);
@@ -70,7 +71,7 @@ function App() {
     {
       name: "Chudidhar",
       price: "999",
-      image: "./src/assets/chudidhar 1.jpg",
+      image: "./src/assets/chudidhar 1.png",
       discount: "",
       discountClass: "",
       discountValue: "",
@@ -104,6 +105,7 @@ function App() {
       ) : (
         " "
       )}
+      <Footer />
     </div>
   );
 }

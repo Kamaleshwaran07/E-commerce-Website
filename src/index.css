@@ -25,11 +25,51 @@
 }
 .card {
   margin: 1em;
+  width: 18em;
+  height: 30em;
 }
 .container {
-  margin-left: 8em;
-  justify-content: center;
+  margin-left: 5em;
 }
 #button {
   font-size: 1.2em;
+}
+.fa-ul {
+  margin-left: 0;
+}
+.footer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 15em;
+  color: white;
+  background-color: #212529;
+}
+
+body {
+  --sb-track-color: #d8d8d8;
+  --sb-thumb-color: #212529;
+  --sb-size: 14px;
+}
+
+body::-webkit-scrollbar {
+  width: var(--sb-size)
+}
+
+body::-webkit-scrollbar-track {
+  background: var(--sb-track-color);
+  border-radius: 10px;
+}
+
+body::-webkit-scrollbar-thumb {
+  background: var(--sb-thumb-color);
+  border-radius: 10px;
+ 
+}
+
+@supports not selector(::-webkit-scrollbar) {
+  body {
+    scrollbar-color: var(--sb-thumb-color)
+                     var(--sb-track-color);
+  }
 }

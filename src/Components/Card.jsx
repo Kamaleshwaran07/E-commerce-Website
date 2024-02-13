@@ -24,8 +24,7 @@ const Card = ({ item, setCartValue }) => {
             class="card-img-top"
             id="image"
             alt="picture"
-            width={"35em"}
-            height={"400em"}
+            height={"300em"}
           />
           {discountvalue == "true" && (
             <span
@@ -39,15 +38,15 @@ const Card = ({ item, setCartValue }) => {
         <div class="card-body card-text text-center">
           <ul class="fa-ul">
             <li>
-              <h1>{item.name}</h1>
+              <h4>{item.name}</h4>
             </li>
             <li className="d-flex justify-content-center">
               <span class={item.discountClass}>
-                <h3>Rs.{item.price}</h3>
+                <p>Rs.{item.price}</p>
               </span>
               {discountvalue == "true" && (
                 <span style={{ marginLeft: "10px" }}>
-                  <h3>Rs.{discountedprice}</h3>
+                  <p>Rs.{discountedprice}</p>
                 </span>
               )}
             </li>

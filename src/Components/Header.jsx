@@ -6,7 +6,7 @@ const Header = () => {
       <div class="container-fluid" id="header">
         <h1>Shop in Style...</h1>
 
-        <h1>Thunikadai</h1>
+        <h1>Hi-Fashion</h1>
       </div>
     </div>
   );

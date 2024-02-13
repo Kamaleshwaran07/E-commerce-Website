@@ -2,11 +2,11 @@ import React from "react";
 
 const Navbar = ({ cartValue, setCartValue }) => {
   return (
-    <div>
-      <nav class="navbar navbar-expand-lg bg-body-tertiary">
+    <div className="sticky-top">
+      <nav class="navbar  navbar-expand-lg bg-body-tertiary">
         <div class="container-fluid">
           <a class="navbar-brand" href="#">
-            Navbar
+            Hi-Fashion
           </a>
           <button
             class="navbar-toggler"
@@ -38,7 +38,11 @@ const Navbar = ({ cartValue, setCartValue }) => {
               </li>
             </ul>
           </div>
-          <button type="button"  id="button" class="btn  justify-content-end me-2">
+          <button
+            type="button"
+            id="button"
+            class="btn  justify-content-end me-2"
+          >
             <i class="fa-solid fa-cart-shopping"></i> Cart{" "}
             <span class="badge text-bg-secondary">{cartValue}</span>
           </button>
