@@ -7,6 +7,19 @@
   padding: 4em;
   height: 18em;
 }
-#displayDiscount{
-    display: none;
+#displayDiscount {
+  display: none;
 }
+#image {
+  position: relative;
+}
+#caption {
+  position: absolute;
+  top: 0;
+  right: 8px;
+  padding: 4px;
+  background-color: #212529;
+}
+/* .checked {
+  color: orange;
+} */

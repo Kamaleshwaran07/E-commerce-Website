@@ -16,37 +16,48 @@ const Card = ({ item, setCartValue }) => {
   let discountvalue = item.discountValue;
 
   return (
-    <div>
-      <>
-        <div>
-          <div class="card">
-            {/* <img src="..." class="card-img-top" alt="..."> */}
-            <div class="card-body">
-              <ul class="fa-ul">
-                <li>
-                  <h1>{item.name}</h1>
-                </li>
-                <li>
-                  <span class={item.discountClass}>
-                    <h3>Rs.{item.price}</h3>
-                  </span>
-                  {discountvalue == "true" && (
-                    <span >
-                      <h3>Rs.{discountedprice}</h3>
-                    </span>
-                  )}
-                </li>
-              </ul>
-              {status ? (
-                <button onClick={AddCart}>Add to Cart</button>
-              ) : (
-                <button onClick={RemoveCart}>Remove from Cart</button>
-              )}
-            </div>
-          </div>
+    <>
+      <div class="card bg-light">
+        <div className="card-img">
+          <img src={item.image} class="card-img-top" id="image" alt="picture" />
+          {discountvalue == "true" && (
+            <span
+              id="caption"
+              className="d-flex justify-content-end card-text text-light rounded"
+            >
+              Deal of the Day
+            </span>
+          )}
         </div>
-      </>
-    </div>
+        <div class="card-body card-text">
+          <ul class="fa-ul">
+            <li>
+              <h1>{item.name}</h1>
+            </li>
+            <li className="d-flex">
+              <span class={item.discountClass}>
+                <h3>Rs.{item.price}</h3>
+              </span>
+              {discountvalue == "true" && (
+                <span style={{ marginLeft: "10px" }}>
+                  <h3>Rs.{discountedprice}</h3>
+                </span>
+              )}
+            </li>
+            <li>
+              <span>
+                <i className= ""></i>
+              </span>
+            </li>
+          </ul>
+          {status ? (
+            <button onClick={AddCart}>Add to Cart</button>
+          ) : (
+            <button onClick={RemoveCart}>Remove from Cart</button>
+          )}
+        </div>
+      </div>
+    </>
   );
 };
 

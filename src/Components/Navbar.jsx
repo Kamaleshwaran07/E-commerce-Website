@@ -38,11 +38,10 @@ const Navbar = ({ cartValue, setCartValue }) => {
               </li>
             </ul>
           </div>
-          <pre>
-            <span class="justify-content-end me-2">
-              <i class="fa-solid fa-cart-shopping"></i> Cart <span>{cartValue}</span>
-            </span>
-          </pre>
+          <button type="button" class="btn  justify-content-end me-2">
+            <i class="fa-solid fa-cart-shopping"></i> Cart{" "}
+            <span class="badge text-bg-secondary">{cartValue}</span>
+          </button>
         </div>
       </nav>
     </div>
