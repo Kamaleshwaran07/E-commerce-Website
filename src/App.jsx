@@ -16,7 +16,8 @@ function App() {
       discount: "30",
       discountClass: "text-muted text-decoration-line-through",
       discountValue: "true",
-      rating: "fa-solid fa-star",
+      ratingchecked: "fa-solid fa-star checked",
+      ratingunchecked: "fa-solid fa-star",
     },
     {
       name: "Jeans",
@@ -25,7 +26,8 @@ function App() {
       discount: "15",
       discountClass: "text-muted text-decoration-line-through",
       discountValue: "true",
-      rating: "fa-solid fa-star",
+      ratingchecked: "fa-solid fa-star checked",
+      ratingunchecked: "fa-solid fa-star",
     },
     {
       name: "T-shirt",
@@ -43,7 +45,8 @@ function App() {
       discount: "",
       discountClass: "",
       discountValue: "false",
-      rating: "fa-solid fa-star",
+      ratingchecked: "fa-solid fa-star checked",
+      ratingunchecked: "fa-solid fa-star",
     },
     {
       name: "Shoes",
@@ -52,7 +55,8 @@ function App() {
       discount: "50",
       discountClass: "text-muted text-decoration-line-through",
       discountValue: "true",
-      rating: "fa-solid fa-star",
+      ratingchecked: "fa-solid fa-star checked",
+      ratingunchecked: "fa-solid fa-star",
     },
     {
       name: "Saree",
@@ -79,7 +83,8 @@ function App() {
       discount: "",
       discountClass: "",
       discountValue: "",
-      rating: "fa-solid fa-star",
+      ratingchecked: "fa-solid fa-star checked",
+      ratingunchecked: "fa-solid fa-star",
     },
   ];
 

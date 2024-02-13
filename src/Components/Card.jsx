@@ -19,7 +19,14 @@ const Card = ({ item, setCartValue }) => {
     <>
       <div class="card bg-light">
         <div className="card-img">
-          <img src={item.image} class="card-img-top" id="image" alt="picture" />
+          <img
+            src={item.image}
+            class="card-img-top"
+            id="image"
+            alt="picture"
+            width={"35em"}
+            height={"400em"}
+          />
           {discountvalue == "true" && (
             <span
               id="caption"
@@ -46,7 +53,11 @@ const Card = ({ item, setCartValue }) => {
             </li>
             <li>
               <span>
-                <i className= ""></i>
+                <i className={item.ratingchecked}></i>
+                <i className={item.ratingchecked}></i>
+                <i className={item.ratingchecked}></i>
+                <i className={item.ratingchecked}></i>
+                <i className={item.ratingunchecked}></i>
               </span>
             </li>
           </ul>
