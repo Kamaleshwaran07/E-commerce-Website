@@ -36,12 +36,12 @@ const Card = ({ item, setCartValue }) => {
             </span>
           )}
         </div>
-        <div class="card-body card-text">
+        <div class="card-body card-text text-center">
           <ul class="fa-ul">
             <li>
               <h1>{item.name}</h1>
             </li>
-            <li className="d-flex">
+            <li className="d-flex justify-content-center">
               <span class={item.discountClass}>
                 <h3>Rs.{item.price}</h3>
               </span>
@@ -61,11 +61,17 @@ const Card = ({ item, setCartValue }) => {
               </span>
             </li>
           </ul>
-          {status ? (
-            <button onClick={AddCart}>Add to Cart</button>
-          ) : (
-            <button onClick={RemoveCart}>Remove from Cart</button>
-          )}
+          <div className="d-flex justify-content-center">
+            {status ? (
+              <button className="btn btn-primary" onClick={AddCart}>
+                Add to Cart <i class="fa-solid fa-cart-shopping"></i>
+              </button>
+            ) : (
+              <button className="btn btn-danger" onClick={RemoveCart}>
+                Remove from Cart <i class="fa-solid fa-cart-shopping"></i>
+              </button>
+            )}
+          </div>
         </div>
       </div>
     </>

@@ -38,7 +38,7 @@ const Navbar = ({ cartValue, setCartValue }) => {
               </li>
             </ul>
           </div>
-          <button type="button" class="btn  justify-content-end me-2">
+          <button type="button"  id="button" class="btn  justify-content-end me-2">
             <i class="fa-solid fa-cart-shopping"></i> Cart{" "}
             <span class="badge text-bg-secondary">{cartValue}</span>
           </button>

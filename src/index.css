@@ -15,7 +15,7 @@
 }
 #caption {
   position: absolute;
-  top: 0;
+  top: 8px;
   right: 8px;
   padding: 4px;
   background-color: #212529;
@@ -29,4 +29,7 @@
 .container {
   margin-left: 8em;
   justify-content: center;
+}
+#button {
+  font-size: 1.2em;
 }
