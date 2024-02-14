@@ -13,7 +13,7 @@ function App() {
     {
       name: "Shirt",
       price: "899",
-      image: "./src/assets/shirts 1.png",
+      image: "./src/assets/shirts1.png",
       discount: "30",
       discountClass: "text-muted text-decoration-line-through",
       discountValue: "true",
@@ -23,7 +23,7 @@ function App() {
     {
       name: "Jeans",
       price: "1299",
-      image: "./src/assets/jeans 1.png",
+      image: "./src/assets/jeans1.png",
       discount: "15",
       discountClass: "text-muted text-decoration-line-through",
       discountValue: "true",
@@ -33,7 +33,7 @@ function App() {
     {
       name: "T-shirt",
       price: "599",
-      image: "./src/assets/t-shirt 1.png",
+      image: "./src/assets/t-shirt1.png",
       discount: "",
       discountClass: "",
       discountValue: "false",
@@ -42,7 +42,7 @@ function App() {
     {
       name: "Trousers",
       price: "499",
-      image: "./src/assets/shorts 1.png",
+      image: "./src/assets/shorts1.png",
       discount: "",
       discountClass: "",
       discountValue: "false",
@@ -52,7 +52,7 @@ function App() {
     {
       name: "Shoes",
       price: "799",
-      image: "./src/assets/shoes 1.png",
+      image: "./src/assets/shoes1.png",
       discount: "50",
       discountClass: "text-muted text-decoration-line-through",
       discountValue: "true",
@@ -62,7 +62,7 @@ function App() {
     {
       name: "Saree",
       price: "599",
-      image: "./src/assets/saree 1.png",
+      image: "./src/assets/saree1.png",
       discount: "10",
       discountClass: "text-muted text-decoration-line-through",
       discountValue: "true",
@@ -71,7 +71,7 @@ function App() {
     {
       name: "Chudidhar",
       price: "999",
-      image: "./src/assets/chudidhar 1.png",
+      image: "./src/assets/chudidhar1.png",
       discount: "",
       discountClass: "",
       discountValue: "",
