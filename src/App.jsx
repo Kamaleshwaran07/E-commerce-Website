@@ -71,7 +71,8 @@ function App() {
     {
       name: "Chudidhar",
       price: "999",
-      image: "./src/assets/chudidhar1.png",
+      image:
+        "https://cdn.discordapp.com/attachments/1018124413176135700/1207187220155469824/chudidhar1.png?ex=65debbb5&is=65cc46b5&hm=70104c85845464a6a9946e3470436cccfed8e060fb767ee7e1e89d73ac801bc6&",
       discount: "",
       discountClass: "",
       discountValue: "",
